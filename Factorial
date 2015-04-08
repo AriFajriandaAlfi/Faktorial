@@ -3,20 +3,25 @@
 
 using namespace std;
 
+void kali(int n){
+    int x = 1;
+    int sum = n;
+    for (int i = 1; i <= sum ; i++ ){
+        x=x*i;
+
+    }
+    cout << "Faktorial : "<<endl;
+    cout << x;
+}
+
+
 int main()
 {
-        int bil[100];
-    int x;
-    bil[0]=1;
-    bil[1]=1;
+    int fact;
     cout << "Input : " << endl;
-    cin >> x;
-    for (int i=2; i<x;i++){
-        bil[i]=bil[i-1]+bil[i-2];
-    }
-    cout << "Fibonacci : " << endl;
-    for (int i=x;i>0;i--){
-        cout << bil[i-1] << " ";
-    }
+    cin >> fact;
+    kali(fact);
+
+
     return 0;
 }
