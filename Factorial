@@ -6,9 +6,13 @@ using namespace std;
 void kali(int n){
     int x = 1;
     int sum = n;
+    cout << "Sample: "<<endl;
+    int r;
     for (int i = 1; i <= sum ; i++ ){
         x=x*i;
-
+        r=n;
+        r=r-r;
+        cout << r;
     }
     cout << "Faktorial : "<<endl;
     cout << x;
